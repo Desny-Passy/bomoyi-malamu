@@ -1,0 +1,419 @@
+@media screen and (max-width:890px) {
+
+    /* Menu accueil */
+    .titres {
+        width: 90%;
+        text-align: center;
+    }
+     
+     
+.presentation{
+    background-repeat: no-repeat;
+}
+    .section-menu h2 {
+        width: 100%;
+        box-shadow: none;
+    }
+    .seach {
+        display: none;
+    }
+
+  
+
+    .menu-depart {
+        justify-content: space-between;
+    }
+
+    .depart1 {
+        width: 30%;
+        padding: 20px;
+    }
+
+    .information {
+        padding: 10px;
+    }
+
+    .information p,
+    .information a,
+    .information h4 {
+        font-size: 12px;
+    }
+
+    .information a {
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+
+    .information h2 {
+        font-size: 20px;
+    }
+
+    .services-technique {
+        width: 100%;
+        padding: 0px;
+        flex-wrap: wrap;
+        gap: 10px;
+        height: auto;
+    }
+
+    .station {
+        width: 45%;
+    }
+
+    /* =========Menu services=============== */
+    .presentations{
+        width: 90%;
+        bottom: -70px;
+    }
+    .services .service{
+        width: 30%;
+        height: 470px;
+    }
+    .separateur{
+        margin-top: 70px;
+    }
+
+
+
+}
+
+@media screen and (max-width:600px) {
+    /* ============= Menu accueil ==================*/
+    .main{
+        width: 95%;
+    }
+    .top-header .icons-web {
+        gap: 0;
+        margin: 0;
+        margin-left: 5px;
+    }
+
+    .classe-nav {
+        background-color: #0653c9;
+    }
+
+    .phone div {
+        display: none;
+    }
+
+    .contact-icons {
+        gap: 10px;
+        margin: 0;
+    }
+    
+
+    .contenair {
+        width: 35%;
+        gap: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .seach {
+        display: none;
+    }  .nav-content {
+        position: absolute;
+        display: block;
+        display: flex;
+        background-color: #0653c9;
+        top: 63px;
+        left: -100%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transition: all 0.8s ease-in-out;
+    }
+
+    .nav-content li {
+        width: 100%;
+    }
+    .background .bi-list {
+        color: white;
+    }
+
+
+    /* ======= Menu burger============ */
+    .background input {
+        display:block;
+        appearance: none;
+        transform: scale(3);
+        
+        accent-color: #ffffff00;
+        margin-left: 170px;
+
+    }
+
+    .background input:checked~.menu .nav-content {
+        left: 0;
+    }
+
+  
+
+    .contenair .bi {
+        color: blue;
+        background-color: blue;
+    }
+
+    .classe-nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+
+    .titres h1 {
+        font-size: 2rem;
+    }
+
+    .menu-depart {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .depart1 {
+        width: 90%;
+        padding: 20px;
+    }
+
+
+    .services-technique {
+        width: 100%;
+        padding: 50px;
+        flex-wrap: wrap;
+        gap: 10px;
+        height: auto;
+    }
+
+    .station {
+        width: 100%;
+    }
+
+    .section-menu {
+        top: -30px;
+        padding: 0;
+    }
+
+    .section-menu h2 {
+        padding-bottom: 0;
+    }
+
+    .devise {
+        width: 100%;
+        padding: 0;
+    }
+
+    .visites,
+    .horaire,
+    .information,
+    .image-patiente {
+        width: 100%;
+    }
+
+    .bottom-footer,
+    .top-footer {
+        flex-direction: column;
+        padding: 10px;
+
+    }
+
+    .infos32 {
+        flex-direction: column-reverse;
+        padding: 10px;
+
+    }
+
+    .infos32 h2 {
+        padding: 0;
+    }
+
+    .urgences p,
+    .technique p,
+    .description {
+        width: 100%;
+        padding: 0;
+    }
+
+    .top-footer h2 {
+        font-size: 1rem;
+    }
+
+    .boite1,
+    .boite2,
+    .boite3,
+    .boite4 {
+        width: 100%;
+        padding: 10px;
+        border-bottom: solid 1px white;
+    }
+
+
+    /* ======================= Menu contact====================== */
+    .container{
+        padding: 20px;
+    }
+    .contact-section{
+        width: 100%;
+        flex-direction: column;
+    }
+    .contact-info,.contact-form{
+        width: 100%;
+    }
+    .contact-form form{
+        width: 100%;
+    }
+    .contact_presentation_text {
+        padding: 20px;
+    }
+    .contact_presentation_text h1{
+        width: 100%;
+        font-size: 2rem;
+    }
+    /* ===============Menu Services============== */
+    .services{
+        flex-direction: column;
+        box-shadow: none;
+    }
+    .services .service{
+        width: 100%;
+        height: 400px;
+    }
+    .engagement{
+        width: 100%;
+        text-align: justify;
+    }
+
+    /* ====================Menu pédiatrie=============== */
+    .acceuil_cardio {
+        width:  100%;
+        height: 200px;
+        padding: 10px 0;
+    }
+    .acceuil_cardio .description{
+        width: 50%;
+    }
+    .contenu{
+        width: 100%;
+    }
+    .contenu .info_chirurgie{
+        display: none;
+    }
+    
+    .contenu .specialite{
+        width: 100%;
+        border:none;
+    }
+    .exemple{
+        flex-direction: column;
+    }
+    .exemple_chirurgie{
+        width: 100%;
+    }
+    
+.environnnement{
+    flex-direction: column;
+}
+
+.environnnement img{
+    width: 100%;
+}
+.medecin{
+    width: 100%;
+}
+.medecin .image-chirurgie{
+    width: 100%;
+}
+
+
+/* ==============MEnu Apropos============================= */
+.header{
+    flex-direction: column-reverse;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+.nav .content, .header .content{
+    height: auto;
+    width: 100%;
+}
+.header-content,.nav .nav-content{
+    width: 100%;
+    height: 200px;
+    z-index: 999;
+}
+
+
+/* ====================Menu blog===================== */
+.container .item, .news-item, .image{
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 0;
+}
+.item img, .item .content_items, .news-item .content{
+    width: 100%;
+}
+
+/* ========== Menu Rendez-vous ======================== */
+.appointement-section .form-container{
+    width: 100%;
+}
+.appointement-section form{
+    width: 100%;
+}
+
+.appointement-section .image-container{
+    display: none;
+}
+
+/* ================ Menu docteur=========== */
+.presentation-content{
+    flex-direction: column;
+}
+/* =============== Menu ginecologie */
+.avis_patient_gine{
+    flex-direction: column;
+}
+.avis_patient_gine .avis{
+     flex-direction: column;
+     justify-content: center;
+    width: 100%;
+    height: auto;
+}
+.avis_patient_gine .avis .profil, .profil{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.avis_patient_gine .avis .commentaire, .commentaire{
+    width: 100%;
+    height: auto;
+}
+.exemple_chirurgie{
+    width: 100%;
+}
+
+/* ================= Menu Cardio ============ */
+.chirurgie, .avis_patient, .avis-chirurgie .avis, .spe_ophat, .question_patient,.question{
+    flex-direction: column;
+}
+.patient{
+    width: 100%;
+}
+.image-chirurgie, .spe_ophat .image-chirurgie{
+    width: 100%;
+    height: 200px;
+}
+.avis_patient .avis-chirurgie, .avis{
+    width: 100%;
+}
+.avis .commentaire{
+    width: 100%;
+    padding: 5px;
+}
+.form_comment{
+    width: 100%;
+}
+
+}

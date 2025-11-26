@@ -1,0 +1,86 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Arial, sans-serif;
+   list-style: none;
+}
+main{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: 50px;
+
+}
+main p, main a{
+    text-align: justify;
+    margin: 10px;
+    font-size: 1.3rem;
+    color: #313131;
+}
+main a{
+    display: block;
+    padding: 5px;
+    color: #0653c9;
+}
+.contact_presentations{
+    background: url("apropos.avif");
+    background-size: cover;
+    background-position: center;
+}
+.contact_presentations p{
+    /* font-weight: bold; */
+    color: white;
+}
+.contact_presentations .contact_presentation_text{
+    background-color: #00000065;
+}
+
+.header, .nav{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    margin-bottom: 10px;
+}
+
+.header h1 {
+    color: #0653c9;
+}
+.header{
+    margin:40px 0;
+    box-shadow: 0px 0px 10px rgba(139, 139, 139, 0.397);
+}
+
+.content {
+    width: 50%;
+
+    
+}
+.header-content,.nav .nav-content{
+    width: 30%;
+    height: 200px;
+   
+    
+}
+.content{
+    width: 70%;
+    height: 200px;
+}
+.header-content img,.nav .nav-content img {
+    width: 100%;
+    height: 200px;
+}
+.nav .content, .header .content{
+    padding: 10px;
+    
+}
+
+.nav .content h1, .header .content h1{
+    color: #0653c9;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}

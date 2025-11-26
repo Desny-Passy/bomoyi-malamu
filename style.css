@@ -1,0 +1,768 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.modal {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    background-color: #00000046;
+    animation: fenetre 1S ease-in forwards;
+}
+
+@keyframes fenetre {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        top: -50%;
+    }
+
+    100% {
+
+        top: -150%;
+    }
+
+}
+
+.top-header {
+    background-color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #0653c9;
+    font-weight: 200;
+    font-size: 15px;
+}
+
+.icons-web {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+    margin-left: 50px;
+}
+.icons-web a{
+    display: block;
+    color: #0653c9;
+    margin: 10px 0;
+    width: 20px;
+    height: 20px;
+;
+}
+
+
+.face {
+    width: 20px;
+    height: 20px;
+}
+
+.ide {
+    font-size: 1.3rem;
+    text-align: center;
+
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+}
+
+.contact-icons {
+    gap: 50px;
+    margin-right: 50px;
+    display: flex;
+}
+
+.contact-icons img {
+    margin-right: 8px;
+}
+
+
+
+
+.titlte-name,
+.blue {
+    color: #0653c9;
+}
+
+
+
+.background {
+    width: 100%;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffffcc;
+    border-bottom: 1px solid #a7ccfc70;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.background input {
+    display: none;
+}
+
+.classe-nav,
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.contenair {
+    width: 60px;
+}
+
+.contenair input {
+    display: none;
+    border: none;
+}
+
+.contenair img {
+    height: 60px;
+    width: 60px;
+
+}
+
+
+.classe-nav {
+    background-color:#0653c9;
+    width: 100%;
+    padding: 0 30px;
+
+
+}
+
+.nav-content {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-content li {
+    width: 110px;
+    padding: 25px 5px;
+    transition: all 0.6s ease-in-out;
+}
+
+.nav-content li a {
+    color: white;
+    font-weight: 500;
+}
+
+.nav-content li:hover {
+    padding: 25px 10px;
+    background-color: white;
+
+}
+
+.nav-content li:hover a {
+    color: #0653c9;
+}
+
+.seach {
+    display: none;
+}
+
+.contenair h2 {
+    display: none;
+}
+
+.presentation {
+    height: 450px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    animation: transition 30s ease infinite;
+
+}
+
+@keyframes transition {
+
+    0%,100%{
+        background-image: url("accueil.jpg");
+    }
+
+    40%{
+        background-image: url("infirmiere-noire-a-leur-espace-de-travail.jpg");
+    }
+
+    70%{
+        background-image: url("accueil.jpg");
+        background-position: top;
+    }
+
+
+}
+
+.titres {
+    width: 60%;
+    color: #ffffff;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 5px #1f2020;
+    padding: 20px;
+    cursor: default;
+}
+.titres p{
+    font-weight: bold;
+}
+
+.titres h1 {
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-size: 3rem;
+
+}
+
+.apropos {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(255, 255, 255, 0.144),#94d3f83f,#0654c944);
+}
+
+button {
+    width: 200px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 1px 1px 5px #868585;
+    border-radius: 20px;
+    background-color: #0653c9;
+    transition: all 0.3s ease;
+
+}
+
+.apropos button:hover {
+    width: 210px;
+}
+
+.presentation .rond {
+    display: none;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-color: #0653c9;
+    border-radius: 50%;
+    left: -400px;
+    top: 0px;
+    z-index: 99;
+}
+
+.apropos a {
+    text-decoration: none;
+    color: white;
+
+
+}
+
+.image img {
+    width: 100%;
+}
+
+
+.section-menu {
+    position: relative;
+    box-shadow: 0px 0px 1px#1f2020;
+    border-radius: 10px;
+    padding-top: 40px;
+    height: auto;
+    top: -80px;
+    margin: 25px 5% 10px 5%;
+    background-color: #ffffffe8;
+
+}
+
+.section-menu span {
+    color: #0653c9;
+}
+
+.depart1 {
+    width: 20%;
+    text-align: center;
+    padding: 20px 40px;
+    border-radius: 7px;
+    box-shadow: inset 2px -1px 1px #0653c9;
+    margin: 25px;
+    transition: all 2s ease;
+}
+
+.depart1:hover {
+    border-radius: 7px;
+    background-color: #0653c9;
+    box-shadow: inset 2px -2px 1px #4d4c4c;
+    margin: 25px;
+}
+
+.depart1:hover a {
+    margin: 0;
+    color: #f7f7f7;
+    font-weight: bold;
+}
+
+.contenu_depart {
+    color: #0653c9;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.6s ease;
+
+}
+
+.menu-depart {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.image-urgence {
+    display: block;
+    background-color: #fff;
+    margin: 0 80px;
+}
+
+.videos {
+    width: 100%;
+    height: 250px;
+    border: 2px solid rgb(231, 197, 132);
+
+
+}
+
+.infos32 {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+    height: auto;
+    padding: 20px;
+}
+
+.information {
+    padding: 0 50px;
+    width: 50%;
+    box-shadow: inset -5px -1px 1px #0653c9;
+    border-radius: 10px;
+}
+
+.information p {
+    color: #404141;
+    margin: 10px;
+    text-align: justify;
+}
+
+.image-patiente {
+    width: 50%;
+    height: auto;
+}
+
+.image-patiente .image_block {
+    height: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-patiente img {
+    width: 50%;
+    height: 100%;
+    box-shadow: 0px 0px 6px #1f2020;
+}
+
+.section-menu h2 {
+    width: 70%;
+    margin: auto;
+}
+
+.section-menu h2,
+.information h2,
+.urgences h2,
+.technique h2,
+.visites h2 {
+    color: #0653c9;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 1px 1px #0653c9;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.information h4 {
+    color: #0653c9;
+}
+
+
+.information a {
+    display: block;
+    text-align: center;
+    color: white;
+    width: 150px;
+    background-color: #0653c9;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 1px 2px 6px #1f2020;
+    margin: 0;
+    margin-bottom: 20px;
+    transition: all 1s ease;
+}
+
+.information a:hover {
+    color: #0653c9;
+    background-color: #f5f4f4;
+    box-shadow: inset 2px -1px 1px #0653c9;
+}
+
+.urgences {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.urgences p,
+.technique .description,
+.horaire p,
+.devise {
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+    color: #636464;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 1px 2px #0653c9;
+    text-align: center;
+}
+
+.devise {
+    box-shadow: none;
+}
+
+.urgences video {
+    width: 90%;
+    border-radius: 10px;
+}
+
+.technique {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services-technique {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 50px;
+
+}
+
+.station {
+    width: 25%;
+    height: 300px;
+    text-align: center;
+    border-radius: 2px;
+    color: black;
+    overflow: hidden;
+    box-shadow: 1px 2px 5px #0653c9;
+}
+
+.slider {
+    display: flex;
+    animation: animation 12s ease-in-out infinite;
+
+}
+
+@keyframes animation {
+
+    0%,
+    40% {
+        transform: translatex(0);
+    }
+
+    50%,
+    90% {
+        transform: translatex(-100%);
+    }
+
+    100% {
+        transform: translatex(-200%);
+    }
+}
+
+.slider:hover {
+    animation-play-state: paused;
+}
+
+
+.info_service {
+    width: 100%;
+    flex-shrink: 0;
+    padding: 10px;
+    transition: all 0.5s ease;
+    text-align: justify;
+    color: #1f2020;
+}
+
+.info_service img {
+    width: 100%;
+    height: 240px;
+}
+
+.info_service h4 {
+    color: #0653c9;
+    text-align: center;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.visites {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    padding-bottom: 40px;
+}
+
+.horaire {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.horaire table {
+    width: 100%;
+    text-align: center;
+    border-spacing: 0;
+}
+
+.horaire table th {
+    color: white;
+    background-color: #0653c9;
+    width: 50%;
+    padding: 10px;
+}
+
+.horaire table td {
+    border: 1px solid #0653c9;
+    padding: 10px;
+}
+
+.horaire table tr:hover {
+    background-color: #7eb0fa;
+}
+
+.avis_patient h2 {
+    color: #0653c9;
+    padding: 10px;
+    box-shadow: 1px 1px 5px #e7e7e7;
+}
+
+
+.offre {
+    display: flex;
+}
+
+.perma {
+    height: 100px;
+    padding-bottom: 40px;
+    ;
+}
+
+.perma1 {
+    height: 100px;
+    width: 250px;
+    padding-bottom: 40px;
+
+}
+
+.bloc1 .bloc2 {
+    display: block;
+
+}
+
+.contenu1 {
+    flex-wrap: wrap;
+    text-align: justify
+}
+
+.separate {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+h3 {
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+span {
+    font-weight: bold;
+
+}
+
+.fin {
+    font-size: 1.4rem;
+    padding-bottom: 20px;
+}
+
+
+/* L'ENTETE DU FOOTER  */
+
+footer {
+    background-color: #0653c9;
+    display: block;
+
+}
+
+
+.top-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0 0px 0;
+    position: sticky;
+    bottom: 0;
+}
+
+.button-white {
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.button-white a {
+    color: #0653c9;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+footer .button-white:hover a {
+    font-size: 1rem;
+    color: #0653c9;
+}
+
+
+
+.border-bottom h2 {
+    color: white;
+    border-top: 4px solid rgba(0, 0, 0, 0.445);
+    text-align: center;
+    padding: 10px 0;
+
+}
+
+.ligne1 {
+    margin: 0 70px;
+    color: #175074;
+}
+
+.bottom-footer {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    padding: 15px 70px;
+    gap: 10px;
+    color: white;
+    font-weight: normal;
+}
+
+.bottom-footer h3 {
+    margin-bottom: 20px;
+    font-weight: normal;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.bottom-footer p,
+.bottom-footer li a {
+    color: white;
+}
+
+.boite1,
+.boite2,
+.boite3,
+.boite4 {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: start;
+    margin-right: 20px;
+
+}
+
+.boite1,
+.boite2 {
+    width: 25%;
+}
+
+.boite3 ul li {
+    list-style: none;
+    margin-bottom: 10px;
+
+}
+
+.boite3 a {
+    color: black
+}
+
+.boite3 .voir_plus,
+.boite2 .voir_plus {
+    color: white;
+}
+
+.boite4 {
+    width: 25%;
+}
+
+.icon-web {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.bpn {
+    color: #e9e5e0;
+
+}

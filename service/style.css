@@ -1,0 +1,578 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    list-style: none;
+}
+
+.roboto-uniquifier {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+
+.separateur {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.separateur span {
+    height: 5px;
+    background-color: #0653c9;
+    border-radius: 40%;
+}
+
+.separateur .span1 {
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+.separateur .span2 {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.separateur .span3 {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+
+/* Contenu du menu service */
+
+
+/* La section d'accueil */
+.acceuil {
+    height: 400px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.678);
+    background-image: url("image/service.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 0 4px #0653c9;
+}
+
+
+.presentations {
+    background-color: white;
+    opacity: 0.9;
+    position: absolute;
+    width: 50%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+    padding: 20px;
+    bottom: -40px;
+    text-align: center;
+    box-shadow: 0 0 4px #0653c9;
+    transition: all 3s ease;
+}
+
+.presentation:hover {
+    box-shadow: 0 0 8px #0653c9;
+}
+
+.presentation:hover p {
+    color: rgb(0, 0, 0);
+
+}
+
+
+p {
+    color: #2b2a2a;
+    margin: 5px;
+}
+
+h1,
+h2,
+h4 {
+    color: #0653c9;
+    margin: 10px;
+}
+
+.presentation h1 {
+    color: #0653c9;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+/* Affichjage des différents services */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 50px;
+    margin: 50px 20px;
+    align-content: space-between;
+}
+
+.services .service {
+    width: 23%;
+    height: 410px;
+    text-align: center;
+    margin: 10px;
+    box-shadow:inset 0px 0px 2px #0653c9;
+    border-radius: 10px 10px 5px 5px;
+    transition: all 0.8s ease;
+    position: relative;
+}
+
+.services .service:hover {
+   transform: scale(1.03);
+}
+
+.services .service img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+}
+
+.services .service h3 {
+    font-weight: normal;
+}
+
+.services .service a,
+.contenu a {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 255, 0.685);
+    display: block;
+    float: right;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+    transition: all 0.8s ease;
+
+}
+
+.services .service a {
+    position: absolute;
+}
+
+.services .service a:hover {
+    scale: 1.1;
+
+}
+
+.engagement {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    height: auto;
+    box-shadow: 0px 0px 1px #0653c9;
+    border-radius: 10px;
+}
+
+/* Style du service de cardiographie */
+.main {
+    width: 90%;
+    margin: auto;
+    border-top: 1px solid rgba(165, 163, 163, 0.479);
+    justify-content: center;
+    position: relative;
+}
+
+.acceuil_cardio {
+    background-color: rgba(218, 213, 213, 0.171);
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    margin: auto;
+    height: 300px;
+    padding: 20px;
+    border-radius: 0 0 50px 50px;
+
+}
+
+.bulle {
+    position: absolute;
+    background-color: rgb(90, 145, 248);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    left: -150px;
+}
+
+.bulle2 {
+    position: absolute;
+    background-color: rgb(90, 145, 248);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    right: -120px;
+    bottom: -100vh;
+
+}
+
+.image {
+    width: 50%;
+    height: auto;
+    box-shadow: 0 0 1px #0653c9;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+}
+
+.description {
+    height: 100%;
+    width: 50%;
+    padding: 20px;
+}
+
+.description h1 {
+    font-size: 2.5rem;
+    color: #0653c9;
+}
+
+.contenu {
+    position: relative;
+    top: -50px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 1px #0653c9;
+    border-radius: 8px 8px 0 0;
+    background-color: white;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.info_chirurgie {
+    width: 29%;
+}
+
+.specialite {
+    border-left: 1px solid rgb(214, 212, 212);
+    padding: 10px;
+    width: 70%;
+}
+
+.chirurgie,
+.exemple,
+.avis {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 2px #0653c9;
+    margin-bottom: 20px;
+}
+
+.exemple {
+    box-shadow: none;
+}
+.image-chirurgie{
+    width: 35%;
+}
+.medecin .image-chirurgie {
+    width: 100%;
+    height: 200px;
+    
+}
+
+.exemple_chirurgie {
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    box-shadow: -1px 3px 5px 0px;
+    transition: all 0.5s ease-in-out;
+    cursor: default;
+}
+
+.exemple_chirurgie:hover {
+    scale: 1.02;
+}
+
+.exemple_chirurgie .image-chirurgie {
+    width: 100%;
+}
+
+.image-chirurgie img {
+    width: 100%;
+    height: 100%;
+}
+
+.exemple_chirurgie .image-chirurgie img {
+    width: 100%;
+    height: 200px;
+}
+
+.description-chirurgie {
+    width: 100%;
+    padding: 20px;
+    text-align: justify;
+}
+
+.description-chirurgie h4 {
+    text-align: center;
+}
+
+.contenu p {
+    text-align: justify;
+}
+
+.contenu li {
+    list-style: circle;
+    margin-left: 40px;
+}
+
+.contenu img {
+    width: 300px;
+    margin: 20px;
+    box-shadow: 0 0 4px #0653c9;
+    bottom: 50px;
+    right: 0;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.info h4 {
+    text-align: center;
+}
+
+.environnnement {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    gap: 20px;
+    margin: auto;
+}
+
+.environnnement img {
+    width: 45%;
+    height: auto;
+    box-shadow: -1px 3px 9px #676868;
+}
+
+.medecin {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    box-shadow: -1px 3px 5px 0px;
+    transition: all 0.5s ease-in-out;
+    cursor: default;
+}
+
+.contact {
+    width: 60%;
+    margin-left: 20px;
+}
+
+.avis_patient {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    margin-top: 30px;
+    display: flex;  
+    justify-content: start;
+    align-items: center;
+}
+.avis_patient_gine {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 20px;
+    margin-top: 30px;
+    display: flex;  
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+}
+.avis-ginecolo {
+    padding: 20px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.avis {
+    width: 80%;
+    justify-content: start;
+    gap: 10px;
+    border-radius: 20px;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    cursor: default;
+}
+.avis_patient_gine .avis {
+    width: 48%;
+    justify-content: start;
+    gap: 10px;
+    border-radius: 20px;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    padding: 5px;
+    cursor: default;
+}
+
+.avis_patient h1 {
+    text-align: center;
+    width: 100%;
+}
+
+
+.avis:hover {
+    box-shadow: 2px 1px 10px #0653c9;
+}
+
+.avis-chirurgie {
+    width: 60%;
+}
+
+.form_comment {
+    width: 40%;
+}
+
+.btn_envoyer {
+    border: none;
+    width: 200px;
+    padding: 10px 20px;
+    box-shadow: 0 0 6px #504f4f;
+    color: white;
+    font-size: 15px;
+    background-color: #0653c9;
+    border-radius: 10px;
+    font-weight: 500;
+    float: right;
+}
+
+.form_comment form {
+    width: 100%;
+
+}
+
+.form_comment input,
+.form_comment textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 4px 4px 20px #4a4848;
+}
+
+.avis .commentaire {
+    width: 50%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.avis .profil {
+    width: 200px;
+}
+
+.avis .profil img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.guillemet {
+    font-size: 30px;
+    font-weight: bolder;
+    font-style: italic;
+    color: #8080ee;
+}
+
+.spe_ophat {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 1px #0653c9;
+    border-radius: 8px;
+
+}
+
+.spe_ophat ul li i {
+    color: #0653c9;
+    margin: 0;
+}
+
+.spe_ophat .image-chirurgie {
+    width: 40%;
+    height: 100%;
+}
+
+.spe_ophat .image-chirurgie img {
+    width: 100%;
+}
+
+.description-chirurgie {
+    padding: 20px;
+}
+
+.description-chirurgi ul li,
+.description-chirurgi h2 {
+    text-align: left;
+}
+
+.reponse {
+    font-style: italic;
+    font-size: 15px;
+}
+
+.question_patient {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.patient {
+    width: 48%;
+}
+
+.question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.question .profil .commentaite {
+    width: 70%;
+    padding: 20px;
+}
+
+.question .profil {
+    width: 30%;
+    height: 100%;
+}
+
+.question .profil img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}

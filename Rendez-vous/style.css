@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif ;
+}
+body {
+    background-color: #fff;
+    color: #333;
+}
+.header {
+    background-image: url('hopital.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.header .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 5px;
+} 
+nav {
+    font-size: 14px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}
+nav span{
+    color: #2d7d70;
+}
+.header nav {
+    font-size: 14px;
+}
+.header nav a {
+    color: white;
+    text-decoration: none;
+}
+.main-content {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+.appointment-section {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    gap: 40px;
+    align-items: stretch;
+}
+.form-container {
+    width: 70%;
+    margin: auto;
+    flex: 1;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+ h2 {
+    margin-bottom: 20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+form, .image-container{
+    width: 48%;
+    height: 400px;
+}
+
+form textarea{
+    height: 200px;
+}
+.image-container img{
+    width: 100%;
+    height: 100%;
+}
+.form-group{
+    display: flex;
+    gap: 10px;
+}
+.form-container form input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+textarea {
+    resize: vertical;
+}
+button {
+    background-color: #2d7d70;
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+button:hover {
+    background-color: #25675e;
+} 
+.img-container {
+    flex: 1;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 50px;
+}
+.img-container img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    margin: 50px;
+}
