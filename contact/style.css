@@ -28,6 +28,11 @@ body {
     align-items: center;
     color: rgb(168, 168, 168);
 }
+h2{
+    font-size: 20px;
+    margin-top:10px;
+    color: blue;
+}
 
 .slideur {
     display: flex;
