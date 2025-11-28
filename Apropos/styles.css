@@ -21,7 +21,7 @@ main p, main a{
 main a{
     display: block;
     padding: 5px;
-    color: #0653c9;
+    color: #008060;
 }
 .contact_presentations{
     background: url("../service/image/femme_souriante.jpg");
@@ -48,7 +48,7 @@ main a{
 }
 
 .header h1 {
-    color: #0653c9;
+    color: #008060;
 }
 .header{
     margin:40px 0;
@@ -80,7 +80,7 @@ main a{
 }
 
 .nav .content h1, .header .content h1{
-    color: #0653c9;
+    color: #008060;
     text-transform: uppercase;
     font-size: 1.5rem;
 }

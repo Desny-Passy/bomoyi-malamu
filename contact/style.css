@@ -27,7 +27,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: rgb(168, 168, 168);
+    color: rgb(255, 255, 255);
 }
 h2{
     font-size: 20px;
@@ -60,11 +60,10 @@ h2{
 
 .contact_presentation_text h1 {
     width: 600px;
- 
     padding: 10px;
     text-align: center;
     font-size: 3rem;
-    color: white;
+    color: #FFC72C;
 }
 
 .container {

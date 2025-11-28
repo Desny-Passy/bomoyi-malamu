@@ -187,12 +187,12 @@ h4 {
 }
 
 .acceuil_cardio {
-    background-color: rgba(218, 213, 213, 0.171);
+    background-color: #00806015;
     display: flex;
     justify-content: start;
     width: 100%;
     margin: auto;
-    height: 300px;
+    height: 400px;
     padding: 20px;
     border-radius: 0 0 50px 50px;
 
@@ -200,7 +200,7 @@ h4 {
 
 .bulle {
     position: absolute;
-    background-color: rgb(90, 145, 248);
+    background-color: #008060;
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -209,7 +209,7 @@ h4 {
 
 .bulle2 {
     position: absolute;
-    background-color: rgb(90, 145, 248);
+    background-color: #008060;
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -219,7 +219,7 @@ h4 {
 }
 
 .image {
-    width: 50%;
+    width: 40%;
     height: auto;
     box-shadow: 0 0 1px #008060;
 }
@@ -231,7 +231,7 @@ h4 {
 
 .description {
     height: 100%;
-    width: 50%;
+    width: 60%;
     padding: 20px;
 }
 
