@@ -36,7 +36,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #0653c9;
+    color: #008060
+
+;
     font-weight: 200;
     font-size: 15px;
 }
@@ -50,7 +52,9 @@
 }
 .icons-web a{
     display: block;
-    color: #0653c9;
+    color: #008060
+
+;
     margin: 10px 0;
     width: 20px;
     height: 20px;
@@ -89,7 +93,9 @@
 
 .titlte-name,
 .blue {
-    color: #0653c9;
+    color: #008060
+
+;
 }
 
 
@@ -141,7 +147,9 @@
 
 
 .classe-nav {
-    background-color:#0653c9;
+    background-color:#008060
+
+;
     width: 100%;
     padding: 0 30px;
 
@@ -174,7 +182,9 @@
 }
 
 .nav-content li:hover a {
-    color: #0653c9;
+    color: #008060
+
+;
 }
 
 .seach {
@@ -189,28 +199,36 @@
     height: 450px;
     position: relative;
     background-size: cover;
-    background-position: center;
-    animation: transition 30s ease infinite;
+    animation: transition 20s infinite;
 
+}
+.presentation{
+    transition: background-image 2s ease-in-out;
+    transition: background-position 2s ease-in-out;
 }
 
 @keyframes transition {
-
-    0%,100%{
-        background-image: url("accueil.jpg");
+    0%,10%{
+        background-image: url("infirmiere-souriante-vue-de-face-avec-stethoscope.jpg");
+        background-position: center;
     }
 
-    40%{
-        background-image: url("infirmiere-noire-a-leur-espace-de-travail.jpg");
+    33%{
+        background-image: url("infirmiere-souriante-vue-de-face-avec-stethoscope.jpg");
+        background-position: center;
     }
 
-    70%{
-        background-image: url("accueil.jpg");
+    66% {
+        background-image: url("infirmiere-souriante-vue-de-face-avec-stethoscope.jpg");
         background-position: top;
     }
 
-
+    100% {
+        background-image: url("infirmiere-souriante-vue-de-face-avec-stethoscope.jpg");
+        background-position: center;
+    }
 }
+
 
 .titres {
     width: 60%;
@@ -221,6 +239,7 @@
     box-shadow: 0px 0px 5px #1f2020;
     padding: 20px;
     cursor: default;
+    background-color: hsla(165, 100%, 25%, 0.247);
 }
 .titres p{
     font-weight: bold;
@@ -249,13 +268,14 @@ button {
     border: none;
     box-shadow: 1px 1px 5px #868585;
     border-radius: 20px;
-    background-color: #0653c9;
+    background-color: #008060;
     transition: all 0.3s ease;
 
 }
 
 .apropos button:hover {
     width: 210px;
+    background-color: #FFC72C;
 }
 
 .presentation .rond {
@@ -263,7 +283,9 @@ button {
     position: absolute;
     width: 500px;
     height: 500px;
-    background-color: #0653c9;
+    background-color: #008060
+
+;
     border-radius: 50%;
     left: -400px;
     top: 0px;
@@ -295,7 +317,9 @@ button {
 }
 
 .section-menu span {
-    color: #0653c9;
+    color: #008060
+
+;
 }
 
 .depart1 {
@@ -303,14 +327,18 @@ button {
     text-align: center;
     padding: 20px 40px;
     border-radius: 7px;
-    box-shadow: inset 2px -1px 1px #0653c9;
+    box-shadow: inset 2px -1px 1px #008060
+
+;
     margin: 25px;
     transition: all 2s ease;
 }
 
 .depart1:hover {
     border-radius: 7px;
-    background-color: #0653c9;
+    background-color: #008060
+
+;
     box-shadow: inset 2px -2px 1px #4d4c4c;
     margin: 25px;
 }
@@ -322,7 +350,9 @@ button {
 }
 
 .contenu_depart {
-    color: #0653c9;
+    color: #008060
+
+;
 }
 
 a {
@@ -364,7 +394,9 @@ a {
 .information {
     padding: 0 50px;
     width: 50%;
-    box-shadow: inset -5px -1px 1px #0653c9;
+    box-shadow: inset -5px -1px 1px #008060
+
+;
     border-radius: 10px;
 }
 
@@ -402,16 +434,22 @@ a {
 .urgences h2,
 .technique h2,
 .visites h2 {
-    color: #0653c9;
+    color: #008060
+
+;
     text-align: center;
     padding: 20px;
-    box-shadow: 0 1px 1px #0653c9;
+    box-shadow: 0 1px 1px #008060
+
+;
     margin-bottom: 20px;
     text-transform: uppercase;
 }
 
 .information h4 {
-    color: #0653c9;
+    color: #008060
+
+;
 }
 
 
@@ -420,7 +458,9 @@ a {
     text-align: center;
     color: white;
     width: 150px;
-    background-color: #0653c9;
+    background-color: #008060
+
+;
     padding: 10px;
     border: none;
     border-radius: 8px;
@@ -431,9 +471,14 @@ a {
 }
 
 .information a:hover {
-    color: #0653c9;
+    color: #FFC72C
+
+
+;
     background-color: #f5f4f4;
-    box-shadow: inset 2px -1px 1px #0653c9;
+    box-shadow: inset 2px -1px 1px #008060
+
+;
 }
 
 .urgences {
@@ -456,7 +501,9 @@ a {
     color: #636464;
     margin-bottom: 20px;
     padding: 20px;
-    box-shadow: 0 1px 2px #0653c9;
+    box-shadow: 0 1px 2px #008060
+
+;
     text-align: center;
 }
 
@@ -494,7 +541,9 @@ a {
     border-radius: 2px;
     color: black;
     overflow: hidden;
-    box-shadow: 1px 2px 5px #0653c9;
+    box-shadow: 1px 2px 5px #008060
+
+;
 }
 
 .slider {
@@ -540,7 +589,9 @@ a {
 }
 
 .info_service h4 {
-    color: #0653c9;
+    color: #008060
+
+;
     text-align: center;
     margin-bottom: 10px;
     text-transform: uppercase;
@@ -570,13 +621,17 @@ a {
 
 .horaire table th {
     color: white;
-    background-color: #0653c9;
+    background-color: #008060
+
+;
     width: 50%;
     padding: 10px;
 }
 
 .horaire table td {
-    border: 1px solid #0653c9;
+    border: 1px solid #008060
+
+;
     padding: 10px;
 }
 
@@ -585,7 +640,9 @@ a {
 }
 
 .avis_patient h2 {
-    color: #0653c9;
+    color: #008060
+
+;
     padding: 10px;
     box-shadow: 1px 1px 5px #e7e7e7;
 }
@@ -646,7 +703,9 @@ span {
 /* L'ENTETE DU FOOTER  */
 
 footer {
-    background-color: #0653c9;
+    background-color: #008060
+
+;
     display: block;
 
 }
@@ -670,7 +729,9 @@ footer {
 }
 
 .button-white a {
-    color: #0653c9;
+    color: #008060
+
+;
     text-decoration: none;
     font-size: 1.2rem;
     transition: all 0.3s ease;
@@ -678,7 +739,9 @@ footer {
 
 footer .button-white:hover a {
     font-size: 1rem;
-    color: #0653c9;
+    color: #008060
+
+;
 }
 
 

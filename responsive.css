@@ -79,6 +79,9 @@
 
 @media screen and (max-width:600px) {
     /* ============= Menu accueil ==================*/
+    .contact-icons{
+        display: none;
+    }
     .main{
         width: 95%;
     }
@@ -89,7 +92,7 @@
     }
 
     .classe-nav {
-        background-color: #0653c9;
+        background-color: #008060;
     }
 
     .phone div {
@@ -116,7 +119,7 @@
         position: absolute;
         display: block;
         display: flex;
-        background-color: #0653c9;
+        background-color: #008060;
         top: 63px;
         left: -100%;
         width: 100%;

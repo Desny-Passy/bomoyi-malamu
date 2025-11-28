@@ -24,7 +24,7 @@ main a{
     color: #0653c9;
 }
 .contact_presentations{
-    background: url("apropos.avif");
+    background: url("../service/image/femme_souriante.jpg");
     background-size: cover;
     background-position: center;
 }
