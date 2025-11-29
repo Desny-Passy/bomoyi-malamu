@@ -347,6 +347,9 @@
     height: 200px;
     z-index: 999;
 }
+.header-content{
+    z-index: 0;
+}
 
 
 /* ====================Menu blog===================== */

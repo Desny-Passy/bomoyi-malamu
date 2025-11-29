@@ -27,6 +27,7 @@ main a{
     background: url("../service/image/femme_souriante.jpg");
     background-size: cover;
     background-position: center;
+    overflow: hidden;
 }
 .contact_presentations p{
     /* font-weight: bold; */
