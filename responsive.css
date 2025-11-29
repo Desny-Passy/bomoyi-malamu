@@ -213,7 +213,9 @@
     .image-patiente {
         width: 100%;
     }
-
+    .image-patiente img{
+        height: 200px;
+    }
     .bottom-footer,
     .top-footer {
         flex-direction: column;
