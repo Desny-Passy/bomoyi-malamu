@@ -10,7 +10,7 @@
     text-decoration: none;
     color: white;
     padding: 10px 20px;
-    background-color: rgb(57, 57, 245);
+    background-color: #008060;
     border-radius: 20px;
 }
 .image img{
@@ -31,14 +31,14 @@
 } 
 
 h2{
-  color: #0653c9;
+  color: white;
  font-size: 36px;
 
   margin-bottom: 20px;
   text-align: center;
 }
 .accueil h2{
-  color: #0653c9;
+  color: #008060;
    text-shadow: 0 2px 0 white;
   width: 100%;
   height: 100%;
@@ -49,6 +49,10 @@ h2{
   align-items: center;
   margin-bottom: 0px;
   text-align: center;
+}
+.accueil p{
+  color: #008060;
+  font-size: 1.5rem;
 }
 .presentation-content {
   display: flex;
@@ -74,7 +78,7 @@ h2{
 
 .description h3 {
   margin-bottom: 16px;
-  color:  #0653c9;
+  color:  #008060;
   font-size: 24px;
 }
 
@@ -95,7 +99,7 @@ h2{
   margin: 5px;
   padding: 10px 15px;
   border: none;
-  background-color: #0653c9;
+  background-color: #008060;
   color: white;
   border-radius: 5px;
   cursor: pointer;

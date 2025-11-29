@@ -719,7 +719,7 @@ footer {
 }
 
 .button-white {
-    width: 300px;
+    width: 320px;
     height: 50px;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -731,7 +731,7 @@ footer {
 
 ;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     transition: all 0.3s ease;
 }
 
