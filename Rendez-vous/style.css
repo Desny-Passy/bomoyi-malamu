@@ -2,17 +2,17 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: sans-serif ;
+    font-family: Arial, sans-serif;
 }
 body {
     background-color: #fff;
     color: #333;
 }
 .header {
-    background-image: url('hopital.jpg');
+    background-image: url('../infirmiere-souriante-vue-de-face-avec-stethoscope.jpg');
     background-size: cover;
     background-position: center;
-    height: 200px;
+    height: 300px;
     position: relative;
     text-align: center;
     color: white;
@@ -26,9 +26,13 @@ body {
 }
 .header h1 {
     font-size: 32px;
-    font-weight: bold;
+    font-weight: bolder;
     margin-bottom: 5px;
+    color: #008060;
 } 
+.overlay p{
+    margin: 30px;
+}
 nav {
     font-size: 14px;
 }
@@ -37,7 +41,7 @@ nav a {
     text-decoration: none;
 }
 nav span{
-    color: #2d7d70;
+    color: #FFC72C;
 }
 .header nav {
     font-size: 14px;
@@ -45,6 +49,11 @@ nav span{
 .header nav a {
     color: white;
     text-decoration: none;
+}
+.header nav a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #FFC72C;
 }
 .main-content {
     display: flex;
@@ -59,7 +68,7 @@ nav span{
     align-items: stretch;
 }
 .form-container {
-    width: 70%;
+    width: 90%;
     margin: auto;
     flex: 1;
     background: #f9f9f9;
@@ -76,8 +85,12 @@ form {
     flex-direction: column;
     gap: 15px;
 }
-form, .image-container{
-    width: 48%;
+form{
+    width: 58%;
+    height: 400px;
+}
+.image-container{
+    width: 40%;
     height: 400px;
 }
 

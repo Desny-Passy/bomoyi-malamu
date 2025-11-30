@@ -76,7 +76,7 @@ h2{
     background-color: rgba(0, 0, 0, 0.082);
     width: 100%;
     padding: 20px;
-    box-shadow: 0 0 35px #777575;
+    box-shadow: 2px 1px 1px #777575;
     display: flex;
     border-radius: 10px;
 
@@ -126,7 +126,7 @@ form {
 }
 
 .btn_submit:hover {
-    background-color: #0d6efd;
+    background-color: #008060;
     width: 220px;
     cursor: pointer;
 }
@@ -149,11 +149,11 @@ form textarea {
 
 form input:hover,
 form textarea:hover {
-    background-color: #f1eaea;
+    background-color: #008060b2;
 }
 
 input:focus,form textarea:focus{
-   background-color: #f1eaea;
+   background-color: #008060b2;
 }
 
 .image_contact img {
