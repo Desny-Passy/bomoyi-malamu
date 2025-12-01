@@ -91,7 +91,6 @@
 
 p {
     color: #2b2a2a;
-    margin: 5px;
 }
 
 h1,
@@ -149,7 +148,6 @@ h4 {
     color: white;
     background-color: #008060;
     display: block;
-    float: right;
     padding: 5px 10px;
     border-radius: 5px;
     margin-top: 5px;
@@ -408,7 +406,6 @@ h4 {
     align-items: center;
 }
 .avis {
-    width: 80%;
     justify-content: start;
     gap: 10px;
     border-radius: 20px;

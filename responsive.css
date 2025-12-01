@@ -427,6 +427,11 @@
 .form_comment{
     width: 100%;
 }
+.accueil h1{
+    font-size: 2rem;
+}
+.accueil p{
+    font-size: 1rem;
 
 }
 @media screen and (max-width:920px){
@@ -473,4 +478,4 @@
 .form_comment{
     width: 100%;
 }
-}
+}                           
