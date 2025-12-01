@@ -402,7 +402,7 @@ a {
 }
 
 .information p {
-    color: #404141;
+    color: #636464;
     margin: 10px;
     text-align: justify;
 }
@@ -465,7 +465,8 @@ a {
     padding: 10px;
     border: none;
     border-radius: 8px;
-    box-shadow: 1px 2px 6px #1f2020;
+    color:#4d4c4c  ;
+    box-shadow: 1px 2px 6px ;
     margin: 0;
     margin-bottom: 20px;
     transition: all 1s ease;
@@ -637,18 +638,17 @@ a {
 }
 
 .horaire table tr:hover {
-    background-color: #7eb0fa;
+    background-color: #71b9af;
 }
 
 .avis_patient h2 {
-    color: #008060
-
-;
+    color: #008060;
     padding: 10px;
     box-shadow: 1px 1px 5px #e7e7e7;
 }
-
-
+.avis_patient p{
+    color:#636464
+}
 .offre {
     display: flex;
 }
@@ -749,7 +749,7 @@ footer .button-white:hover a {
 
 .border-bottom h2 {
     color: white;
-    border-top: 4px solid rgba(0, 0, 0, 0.445);
+    border-top: 4px solid white;
     text-align: center;
     padding: 10px 0;
 
@@ -806,7 +806,7 @@ footer .button-white:hover a {
 }
 
 .boite3 a {
-    color: black
+    color: #636464
 }
 
 .boite3 .voir_plus,
