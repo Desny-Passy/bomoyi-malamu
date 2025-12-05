@@ -210,22 +210,22 @@ p {
 
 @keyframes transition {
     0%,10%{
-        background-image: url("infirmiere-souriante-vue-de-face-avec-stethoscope.jpg");
+        background-image: url("bomoyi-malamu-infirmiere-souriante-vue-de-face-avec-stethoscope.webp");
         background-position: center;
     }
 
     33%{
-        background-image: url("infirmiere-souriante-vue-de-face-avec-stethoscope.jpg");
+        background-image: url("bomoyi-malamu-infirmiere-souriante-vue-de-face-avec-stethoscope.webp");
         background-position: center;
     }
 
     66% {
-        background-image: url("infirmiere-souriante-vue-de-face-avec-stethoscope.jpg");
+        background-image: url("bomoyi-malamu-infirmiere-souriante-vue-de-face-avec-stethoscope.webp");
         background-position: top;
     }
 
     100% {
-        background-image: url("infirmiere-souriante-vue-de-face-avec-stethoscope.jpg");
+        background-image: url("bomoyi-malamu-infirmiere-souriante-vue-de-face-avec-stethoscope.webp");
         background-position: center;
     }
 }
@@ -651,7 +651,7 @@ a {
     box-shadow: 1px 1px 5px #e7e7e7;
 }
 .avis_patient p{
-    color:#636464
+    color:#636464;
 }
 .offre {
     display: flex;
