@@ -465,7 +465,7 @@ a {
     padding: 10px;
     border: none;
     border-radius: 8px;
-    color:#4d4c4c  ;
+    color:#fff  ;
     box-shadow: 1px 2px 6px ;
     margin: 0;
     margin-bottom: 20px;
@@ -639,6 +639,10 @@ a {
 
 .horaire table tr:hover {
     background-color: #71b9af;
+}
+
+.times{
+    color: #636464;
 }
 
 .avis_patient h2 {
