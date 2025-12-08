@@ -230,17 +230,50 @@
     </div>
 
     <div class="form_comment">
-      <form action="" method="post" aria-label="Formulaire avis patient">
-        <h4>Décrivez votre expérience</h4>
-        <input type="text" name="nom" placeholder="Nom" required />
-        <input type="email" name="email" placeholder="Ex : desnypassy@gmail.com" required />
-        <textarea name="commentaire" cols="30" rows="10" placeholder="Votre commentaire"></textarea>
-        <button type="submit" class="btn_envoyer">Envoyer</button>
-      </form>
-    </div>
-  </section>
-</main>
+                    <h4>Décrivez votre expérience</h4>
+                     <form action="" method="POST" id="contact-form" aria-describedby="status" novalidate>
+            <input name="nom" type="text" placeholder="Nom" required><br>
+            <input name="email" type="email" placeholder="Email" required><br>
+           
+            <textarea name="comment" rows="20" placeholder="Votre message"></textarea><br>
+            <button type="submit" class="btn_submit" style="color:white;" id="submit">ENVOYER<i
+                class="bi bi-arrow-right"></i></button><br>
+            <div id="spinner" style="display:none;">Envoi en cours...</div>
+            <div id="status" role="status" aria-live="polite" style="margin-top:10px;"></div>
+          
+                </form>
+            </div>
+        </section>
+    </main>
 
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+
+    <!-- code javascript d'envoi E-mail -->
+    <script>
+      emailjs.init("xusLHEhF0sGipwlfP"); // ta clé publique
+
+      document.getElementById("contact-form").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const form = this;
+
+        // 1️⃣ Envoi à l'ADMIN
+        emailjs.sendForm("service_5f40c4m", "template_0uznkrb", form)
+          .then(() => {
+            // 2️⃣ Envoi à l'UTILISATEUR
+            return emailjs.sendForm("service_5f40c4m", "template_p1524tk", form);
+          })
+          .then(() => {
+            alert("Message envoyé ! Vous recevrez aussi un email de confirmation.");
+          })
+          .catch((err) => {
+            console.error(err);
+            alert("Erreur lors de l’envoi.");
+          });
+      });
+    </script>
 <footer>
   <div class="top-footer">
     <div class="border-bottom">
