@@ -2,7 +2,6 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   font-family: Arial, sans-serif;
    list-style: none;
 }
 main{
@@ -15,8 +14,7 @@ main{
 main p, main a{
     text-align: justify;
     margin: 10px;
-    font-size: 1.3rem;
-    color: #313131;
+    color: black;
 }
 main a{
     display: block;

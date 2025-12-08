@@ -271,6 +271,7 @@ button {
     border-radius: 20px;
     background-color: #008060;
     transition: all 0.3s ease;
+    margin: auto;
 
 }
 
@@ -457,15 +458,16 @@ a {
 .information a {
     display: block;
     text-align: center;
-    color: white;
+    color: #FFF;
     width: 150px;
-    background-color: #008060
-
-;
+    background-color: #008060;
     padding: 10px;
     border: none;
     border-radius: 8px;
+<<<<<<< HEAD
+=======
     color:#fff  ;
+>>>>>>> dceb8dcb34742a6b75a1de5275152b75abce4913
     box-shadow: 1px 2px 6px ;
     margin: 0;
     margin-bottom: 20px;

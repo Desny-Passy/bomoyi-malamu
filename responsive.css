@@ -366,6 +366,9 @@
 .item img, .item .content_items, .news-item .content{
     width: 100%;
 }
+.news-item .image img{
+    width: 200px;
+}
 
 /* ========== Menu Rendez-vous ======================== */
 .appointement-section .form-container{
@@ -428,10 +431,13 @@
     width: 100%;
 }
 .accueil h1{
-    font-size: 2rem;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
 }
 .accueil p{
     font-size: 1rem;
+    margin: 5px;
 
 }
 @media screen and (max-width:920px){
@@ -478,4 +484,4 @@
 .form_comment{
     width: 100%;
 }
-}                           
+}}
