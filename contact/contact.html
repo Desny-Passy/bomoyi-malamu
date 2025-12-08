@@ -167,10 +167,10 @@
         const form = this;
 
         // 1️⃣ Envoi à l'ADMIN
-        emailjs.sendForm("service_s8lofer", "template_e1mhkp3", form)
+        emailjs.sendForm("service_5nd0fvs", "template_zrfq8jh", form)
           .then(() => {
             // 2️⃣ Envoi à l'UTILISATEUR
-            return emailjs.sendForm("service_s8lofer", "template_v763sge", form);
+            return emailjs.sendForm("service_5nd0fvs", "template_v763sge", form);
           })
           .then(() => {
             alert("Message envoyé ! Vous recevrez aussi un email de confirmation.");
