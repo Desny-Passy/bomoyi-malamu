@@ -26,6 +26,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  opacity: 1.7;
   background-image:url("bomoyi\ malamu\ docteur.avif");
   background-position: center;
   background-size: cover;
