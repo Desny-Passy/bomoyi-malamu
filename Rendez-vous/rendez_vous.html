@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../responsive.css">
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+     <link rel="icon" href="../image/logo bomoyi malamu.webp" type="image logo bomoyi-malamu">
 </head>
 <body>
 <header id="accueil">
@@ -33,7 +34,7 @@
 
         <div class="phone">
           <div>
-            <p style="color: #008060;"><i class="bi bi-envelope"></i> bomoyimalamu@example.com</p>
+            <p style="color: #008060;"><i class="bi bi-envelope"></i> contact@bomoyi-malamu.com</p>
           </div>
 
         </div>
@@ -92,15 +93,15 @@
         <section class="appointement-section">
             <div class="form-container">
                 
-                <form>
+                <form id="contact-form" method="POST">
                      <h2><strong>Prendre</strong>Rendez-vous </h2>
                     <div class="form-group">
-                        <input type="text" placeholder="Nom" required>
-                        <input type="text" placeholder="Téléphone" required>
+                        <input name="nom" type="text" placeholder="Nom" required>
+                        <input name="telephone" type="text" placeholder="Téléphone" required>
                     </div>
                     <div class="form-group">
-                        <input type="Email" placeholder="Email" required >
-                        <input type="Date" required>
+                        <input name="email" type="Email" placeholder="Email" required >
+                        <input name="date" type="Date" required>
                     </div>
                     <div class="form-group">
                         
@@ -110,20 +111,21 @@
                             <option>Chirurgie</option>
                             <option>Pédiatrie</option>
                         </select> -->
-                        <select required>
+                        <select name="medecin" required>
                             <option value="">Choisir un Médecin</option>
-                            <option value="">Dr Passi Desny Rhode (Chef et cordonnateur du groupe)</option>
-                            <option value="">Dr Mvouezolo  Matondo Jeremie (Chef adjoint)</option>
-                            <option value="">Dr Mandoumou Saurelien Simplice </option>
-                            <option value="">Dr Loembet Dieny Jeremie</option>
-                            <option value="">Dr Mpassi Gilange</option>
-                            <option value="">Dr Ibambi Elongo Dorcas</option>
-                            <option value="">Dr Sita Grace Scheran</option>
-                            <option value="">Dr Messie Kiyimbou</option>
+                            <option value="Dr Passi Desny Rhode (Chef et cordonnateur du groupe)">Dr Passi Desny Rhode (Chef et cordonnateur du groupe)</option>
+                            <option value="Dr Mvouezolo  Matondo Jeremie (Chef adjoint)">Dr Mvouezolo  Matondo Jeremie (Chef adjoint)</option>
+                            <option value="Dr Mandoumou Saurelien Simplice">Dr Mandoumou Saurelien Simplice </option>
+                            <option value="Dr Loembet Dieny Jeremie">Dr Loembet Dieny Jeremie</option>
+                            <option value="Dr Mpassi Gilange">Dr Mpassi Gilange</option>
+                            <option value="Dr Ibambi Elongo Dorcas">Dr Ibambi Elongo Dorcas</option>
+                            <option value="Dr Sita Grace Scheran">Dr Sita Grace Scheran</option>
+                            <option value="Dr Messie Kiyimbou">Dr Messie Kiyimbou</option>
                         </select>
                     </div>
-                    <textarea placeholder="Votre message" rows="4"></textarea>
-                    <button type="submit">Soumettre sa Requete</button>
+                    <input name="subject" type="text" placeholder="Sujet"  required>
+                    <textarea name="message" placeholder="Votre message" rows="4"></textarea>
+                    <button type="submit" id="submit">Soumettre</button>
                 </form>
                  <div class="image-container">
                 <img src="../service/image/rendez-vous.webp" alt="chirrurgie">
@@ -132,6 +134,35 @@
            
         </section>
     </main>
+
+     <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+
+    <!-- code javascript d'envoi E-mail -->
+    <script>
+      emailjs.init("atMUUD7M9E64LUCaG"); // ta clé publique
+
+      document.getElementById("contact-form").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const form = this;
+
+        // 1️⃣ Envoi à l'ADMIN
+        emailjs.sendForm("service_bqd2tzw", "template_2jmlzbd", form)
+          .then(() => {
+            // 2️⃣ Envoi à l'UTILISATEUR
+            return emailjs.sendForm("service_bqd2tzw", "template_ejdbyb8", form);
+          })
+          .then(() => {
+            alert("Message envoyé ! Vous recevrez aussi un email de confirmation.");
+          })
+          .catch((err) => {
+            console.error(err);
+            alert("Erreur lors de l’envoi.");
+          });
+      });
+    </script>
     <footer>
     <div class="top-footer">
       <div class="border-bottom">

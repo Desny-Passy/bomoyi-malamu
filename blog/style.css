@@ -34,10 +34,10 @@ body {
 /* Mise en forme de du contenu principal */
 .content_items h2 a, .news-item .content h2 a{
     text-decoration: none;
-    color:#3592cf;
+    color:#008060;
 }
 .content_items p{
-    font-size: 20px;
+    font-size: 1rem;
     text-transform:lowercase;
     color: #636464;
 }
@@ -70,6 +70,6 @@ body {
     font-style: oblique;
  }
  .news-item .content p{
-    font-size:20px;
+    font-size:1rem;
     color: #636464;
  }
