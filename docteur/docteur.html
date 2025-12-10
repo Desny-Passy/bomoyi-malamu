@@ -184,15 +184,20 @@
         </div>
     </div>
 </footer>
-
-  <script src="../chatbot.js">
+<script>
     function filterDoctors(specialty) {
       const cards = document.querySelectorAll('.doctor-card');
       cards.forEach(card => {
-        card.style.display = (specialty === 'all' || card.dataset.specialty === specialty) ? 'block' : 'none';
+        if (specialty === 'all' || card.dataset.specialty === specialty) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
       });
     }
   </script>
+
+  <script src="../chatbot.js">  </script>
 
 </body>
 </html>

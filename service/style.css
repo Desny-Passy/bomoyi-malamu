@@ -89,8 +89,9 @@
 
 
 p {
-    color: #2b2a2a;
+    color: #636464;
 }
+
 
 h1,
 h2,
@@ -331,7 +332,9 @@ h4 {
     list-style: circle;
     margin-left: 40px;
 }
-
+li{
+    color: #636464;
+}
 .contenu img {
     width: 300px;
     margin: 20px;
@@ -540,6 +543,7 @@ h4 {
     gap: 20px;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .patient {
@@ -568,4 +572,7 @@ h4 {
     width: 100px;
     height: 100px;
     border-radius: 50%;
+}
+.copyright p{
+    color: rgb(212, 212, 212);
 }

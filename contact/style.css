@@ -91,7 +91,7 @@ h2{
 
 .contact-section p {
     margin-left: 20px;
-    color: black;
+    color: #636464;
 }
 
 .contact-info {
@@ -102,6 +102,9 @@ h2{
 .contact-form {
     width: 60%;
     height: 100%;
+}
+li{
+    color: #636464;
 }
 
 form {

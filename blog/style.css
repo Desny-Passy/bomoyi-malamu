@@ -39,6 +39,7 @@ body {
 .content_items p{
     font-size: 20px;
     text-transform:lowercase;
+    color: #636464;
 }
 /* mise en forme des autres barticle */
 .news-item{
@@ -70,4 +71,5 @@ body {
  }
  .news-item .content p{
     font-size:20px;
+    color: #636464;
  }

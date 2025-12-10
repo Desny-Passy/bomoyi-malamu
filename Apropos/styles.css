@@ -14,7 +14,7 @@ main{
 main p, main a{
     text-align: justify;
     margin: 10px;
-    color: black;
+    color: #636464;
 }
 main a{
     display: block;
