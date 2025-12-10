@@ -83,3 +83,33 @@ main a{
     text-transform: uppercase;
     font-size: 1.5rem;
 }
+
+
+/* Le conteneur est 100% responsive */
+    #map {
+      width: 100%;
+      height: 300px; /* Tu peux changer la hauteur */
+      border-radius: 10px; /* coins arrondis (optionnel) */
+      overflow: hidden;
+    }
+
+    /* Mobile */
+    @media (max-width: 600px) {
+      #map {
+        height: 250px;
+      }
+    }
+
+    /* Tablette */
+    @media (min-width: 601px) and (max-width: 1024px) {
+      #map {
+        height: 350px;
+      }
+    }
+
+    /* Grand écran */
+    @media (min-width: 1025px) {
+      #map {
+        height: 450px;
+      }
+    }

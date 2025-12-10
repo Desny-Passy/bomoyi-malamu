@@ -34,16 +34,20 @@
         "addressLocality": "Brazzaville",
         "addressCountry": "CG"
       },
-<<<<<<< HEAD
-      "telephone": "+242064389475",
-      "email": "contact@bomoyi-malamu.com",
-=======
       "telephone": "+242066871114",
       "email": "contact@bomoyimalamu.com",
->>>>>>> 0536513d13fe9f6c7f70c0a58d8eaa911b729aa8
-      "url": "https://bomoyi-malamu.com/apropos"
+      "url": "https://bomoyi-malamu.com/apropos/apropos"
     }
     </script>
+
+    <!-- Integration leaflet pour la carte -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script> -->
+
+    <!--  -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
 </head>
 
 <body>
@@ -171,10 +175,40 @@
     </main>
 
     <main>
+        <!-- div pour afficher la carte -->
+        <div id="map" style="height: 400px;"></div>
         <!-- Vision - SEO -->
         <div class="header">
             <div class="header-content">
-                <img src="bomoyi-malamu-vision.webp" alt="bomoyi malamu vision et carte">
+                <!-- Script pour afficher la carte -->
+                <script>
+  const adresse = "Rond point MOUNGALI";
+
+  fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(adresse)}`)
+    .then(res => res.json())
+    .then(data => {
+      if (data.length > 0) {
+        const lat = data[0].lat;
+        const lon = data[0].lon;
+
+        // Initialisation de la carte Leaflet
+        const map = L.map('map').setView([lat, lon], 15);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          maxZoom: 19,
+        }).addTo(map);
+
+        // Ajout du marqueur
+        L.marker([lat, lon])
+          .addTo(map)
+          .bindPopup(`Adresse : ${adresse}`)
+          .openPopup();
+      } else {
+        alert("Adresse introuvable !");
+      }
+    });
+</script>
+
             </div>
             <div class="content">
                 <h1>Notre Vision</h1>
