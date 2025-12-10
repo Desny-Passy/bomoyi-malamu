@@ -178,48 +178,53 @@
         <!-- div pour afficher la carte -->
         <div id="map" style="height: 400px;"></div>
         <!-- Vision - SEO -->
+
         <div class="header">
-            <div class="header-content">
-                <!-- Script pour afficher la carte -->
-                <script>
-  const adresse = "Rond point MOUNGALI";
 
-  fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(adresse)}`)
-    .then(res => res.json())
-    .then(data => {
-      if (data.length > 0) {
-        const lat = data[0].lat;
-        const lon = data[0].lon;
+            <!-- Script pour afficher la carte -->
+            <script>
+                const adresse = "Rond point MOUNGALI";
 
-        // Initialisation de la carte Leaflet
-        const map = L.map('map').setView([lat, lon], 15);
+                fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(adresse)}`)
+                    .then(res => res.json())
+                    .then(data => {
+                        if (data.length > 0) {
+                            const lat = data[0].lat;
+                            const lon = data[0].lon;
 
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-          maxZoom: 19,
-        }).addTo(map);
+                            // Initialisation de la carte Leaflet
+                            const map = L.map('map').setView([lat, lon], 15);
 
-        // Ajout du marqueur
-        L.marker([lat, lon])
-          .addTo(map)
-          .bindPopup(`Adresse : ${adresse}`)
-          .openPopup();
-      } else {
-        alert("Adresse introuvable !");
-      }
-    });
-</script>
+                            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                                maxZoom: 19,
+                            }).addTo(map);
 
-            </div>
-            <div class="content">
+                            // Ajout du marqueur
+                            L.marker([lat, lon])
+                                .addTo(map)
+                                .bindPopup(`Adresse : ${adresse}`)
+                                .openPopup();
+                        } else {
+                            alert("Adresse introuvable !");
+                        }
+                    });
+            </script>
+
+
+            <div class="content" style="width: 100%;">
                 <h1>Notre Vision</h1>
                 <p>
-                    <!-- SEO optimisé -->
-                    Bomoyi Malamu aspire à devenir la chaîne de <strong>services médicaux de référence en
-                        Afrique</strong>,
-                    un modèle d’excellence pour le bien-être, la prévention santé et la modernisation du secteur
-                    sanitaire
-                    au Congo et dans toute l’Afrique centrale.
-                </p>
+                <p>
+                    <strong>Bomoyi Malamu</strong> aspire à devenir la <strong>chaîne de services médicaux de référence
+                        en Afrique</strong>,
+                    un modèle d’excellence pour le <strong>bien-être</strong>, la <strong>prévention santé</strong> et
+                    la
+                    <strong>modernisation du secteur sanitaire</strong> au Congo et dans toute l’Afrique centrale.
+                    Notre ambition est de bâtir un réseau de structures médicales modernes, accessibles et innovantes, où chaque patient bénéficie 
+    d’une prise en charge humaine, sécurisée et fondée sur les meilleures pratiques internationales.
+</p>
+                <p> Notre objectif est clair : faire de la <strong>santé</strong> un droit réel, accessible, moderne et digne pour chaque famille, chaque patient et chaque communauté.</p>
+
             </div>
         </div>
 
