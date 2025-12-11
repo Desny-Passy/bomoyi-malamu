@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>formulaire de  rendez-vous</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="../responsive.css">
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
-     <link rel="icon" href="../image/logo bomoyi malamu.webp" type="image logo bomoyi-malamu">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>formulaire de rendez-vous</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../responsive.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
 </head>
+
 <body>
-<header id="accueil">
+  <header id="accueil">
     <section class="top-header">
       <div class="icons-web">
         <a href=""><i class="bi bi-facebook"></i></a>
@@ -26,7 +27,7 @@
       <div class="contact-icons">
         <div class="phone">
           <div>
-            
+
             <p style="color: #008060;"><i class="bi bi-telephone"></i> +242-06-405-42-61</p>
           </div>
 
@@ -34,7 +35,7 @@
 
         <div class="phone">
           <div>
-            <p style="color: #008060;"><i class="bi bi-envelope"></i> contact@bomoyi-malamu.com</p>
+            <p style="color: #008060;"><i class="bi bi-envelope"></i> bomoyimalamu@example.com</p>
           </div>
 
         </div>
@@ -49,7 +50,7 @@
         <img src="../image/logo bomoyi malamu.webp" alt="Logo bomoyi malamu">
           <h2>Bomyi<span style="color: #008060;">Malamu</span></h2>
       </div>
-        <input type="checkbox" name="" id="" value="" class="bi bi-list">
+      <input type="checkbox" name="" id="" value="" class="bi bi-list">
 
       <div class="menu">
         <ul class="nav-content">
@@ -79,99 +80,103 @@
 
   </nav>
 
-    <section class="header">
-        <div class="overlay">
-            <h1><span style="color: #FFC72C;">RENDEZ</span>-VOUS</h1>
-            <p>Organisez votre consultation médicale en quelques clics grâce à notre service de prise de rendez-vous en ligne. Disponible 24h/24, il vous permet de choisir facilement votre spécialité, votre médecin, ainsi que la date et l’heure qui vous conviennent.</p>
-            <nav>
-                <a href="../index.html">Accueil</a> / <a href="../service/service.html">Service</a> / <span>Rendez-vous</span>
-            </nav>
+  <section class="header">
+    <div class="overlay">
+      <h1><span style="color: #FFC72C;">RENDEZ</span>-VOUS</h1>
+      <p>Organisez votre consultation médicale en quelques clics grâce à notre service de prise de rendez-vous en ligne.
+        Disponible 24h/24, il vous permet de choisir facilement votre spécialité, votre médecin, ainsi que la date et
+        l’heure qui vous conviennent.</p>
+      <nav>
+        <a href="../index.html">Accueil</a> / <a href="../service/service.html">Service</a> / <span>Rendez-vous</span>
+      </nav>
+    </div>
+  </section>
+  <main class="maint-content">
+
+    <section class="appointement-section">
+      <div class="form-container">
+
+        <form>
+          <h2><strong>Prendre</strong>Rendez-vous </h2>
+          <div class="form-group">
+            <input name="name" type="text" placeholder="Nom" required>
+            <input name="phone" type="text" placeholder="Téléphone" required>
+          </div>
+          <div class="form-group">
+            <input name="email" type="Email" placeholder="Email" required>
+            <input name="date" type="Date" required>
+          </div>
+          <div class="form-group">
+
+            <select required>
+              <option name="doctor_name" value="Choisir un Médecin">Choisir un Médecin</option>
+              <option name="doctor_name" value="Dr Passi Desny Rhode">Dr Passi Desny Rhode (Chef et cordonnateur du groupe)</option>
+              <option name="doctor_name" value="Dr Mvouezolo Matondo Jeremie">Dr Mvouezolo Matondo Jeremie (Chef adjoint)</option>
+              <option name="doctor_name" value="Dr Mandoumou Saurelien Simplice">Dr Mandoumou Saurelien Simplice </option>
+              <option name="doctor_name" value="Dr Loembet Dieny Jeremie">Dr Loembet Dieny Jeremie</option>
+              <option name="doctor_name" value="Dr Mpassi Gilange">Dr Mpassi Gilange</option>
+              <option name="doctor_name" value="Dr Ibambi Elongo Dorcas">Dr Ibambi Elongo Dorcas</option>
+              <option name="doctor_name" value="Dr Sita Grace Scheran">Dr Sita Grace Scheran</option>
+              <option name="doctor_name" value="Dr Messie Kiyimbou">Dr Messie Kiyimbou</option>
+            </select>
+          </div>
+          <input name="subject" type="text" placeholder="Objet de votre demande"><br>
+          <textarea name="message" placeholder="Votre message" rows="4"></textarea>
+          <button  id="submit" type="submit">Soumettre</button>
+        </form>
+        <div class="image-container">
+          <img src="../service/image/rendez-vous.webp" alt="chirrurgie">
         </div>
+      </div>
+
     </section>
-    <main class="maint-content">
-       
-        <section class="appointement-section">
-            <div class="form-container">
-                
-                <form id="contact-form" method="POST">
-                     <h2><strong>Prendre</strong>Rendez-vous </h2>
-                    <div class="form-group">
-                        <input name="nom" type="text" placeholder="Nom" required>
-                        <input name="telephone" type="text" placeholder="Téléphone" required>
-                    </div>
-                    <div class="form-group">
-                        <input name="email" type="Email" placeholder="Email" required >
-                        <input name="date" type="Date" required>
-                    </div>
-                    <div class="form-group">
-                        
-                        <!-- <select required>
-                            <option><a href="index1.html">Services</a></option>
-                            <option>Médecine Générale</option>
-                            <option>Chirurgie</option>
-                            <option>Pédiatrie</option>
-                        </select> -->
-                        <select name="medecin" required>
-                            <option value="">Choisir un Médecin</option>
-                            <option value="Dr Passi Desny Rhode (Chef et cordonnateur du groupe)">Dr Passi Desny Rhode (Chef et cordonnateur du groupe)</option>
-                            <option value="Dr Mvouezolo  Matondo Jeremie (Chef adjoint)">Dr Mvouezolo  Matondo Jeremie (Chef adjoint)</option>
-                            <option value="Dr Mandoumou Saurelien Simplice">Dr Mandoumou Saurelien Simplice </option>
-                            <option value="Dr Loembet Dieny Jeremie">Dr Loembet Dieny Jeremie</option>
-                            <option value="Dr Mpassi Gilange">Dr Mpassi Gilange</option>
-                            <option value="Dr Ibambi Elongo Dorcas">Dr Ibambi Elongo Dorcas</option>
-                            <option value="Dr Sita Grace Scheran">Dr Sita Grace Scheran</option>
-                            <option value="Dr Messie Kiyimbou">Dr Messie Kiyimbou</option>
-                        </select>
-                    </div>
-                    <input name="subject" type="text" placeholder="Sujet"  required>
-                    <textarea name="message" placeholder="Votre message" rows="4"></textarea>
-                    <button type="submit" id="submit">Soumettre</button>
-                </form>
-                 <div class="image-container">
-                <img src="../service/image/rendez-vous.webp" alt="chirrurgie">
-            </div>
-            </div>
-           
-        </section>
-    </main>
+  </main>
 
-     <!-- EmailJS SDK -->
+  <!-- Script de formulaire rendez-vous -->
+      <!-- EmailJS SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
-
-    <!-- code javascript d'envoi E-mail -->
-    <script>
+  <script>
+    (function () {
       emailjs.init("atMUUD7M9E64LUCaG"); // ta clé publique
+    })();
 
-      document.getElementById("contact-form").addEventListener("submit", function (e) {
-        e.preventDefault();
+    document.querySelector("form").addEventListener("submit", function (e) {
+      e.preventDefault();
 
-        const form = this;
+      let params = {
+        name: document.querySelector('input[placeholder="Nom"]').value,
+        phone: document.querySelector('input[placeholder="Téléphone"]').value,
+        email: document.querySelector('input[placeholder="Email"]').value,
+        date: document.querySelector('input[type="Date"]').value,
+        doctor_name: document.querySelector("select").value,
+        subject: document.querySelector('input[type="text"]').value,
+        message: document.querySelector("textarea").value,
 
-        // 1️⃣ Envoi à l'ADMIN
-        emailjs.sendForm("service_bqd2tzw", "template_2jmlzbd", form)
-          .then(() => {
-            // 2️⃣ Envoi à l'UTILISATEUR
-            return emailjs.sendForm("service_bqd2tzw", "template_ejdbyb8", form);
-          })
-          .then(() => {
-            alert("Message envoyé ! Vous recevrez aussi un email de confirmation.");
-          })
-          .catch((err) => {
-            console.error(err);
-            alert("Erreur lors de l’envoi.");
-          });
-      });
-    </script>
-    <footer>
+        // Pour la réponse auto
+        to_name: document.querySelector('input[placeholder="Nom"]').value,
+        reply_email: "contact@bomoyi-malamu.com"
+      };
+// Envoi à l'ADMIN
+      emailjs.send("service_bqd2tzw", "template_2jmlzbd", params)
+        .then(function () {
+          emailjs.send("service_bqd2tzw", "template_ejdbyb8", params);
+          alert("Votre requête a été envoyée avec succès !");
+        }, function (error) {
+          alert("Erreur lors de l'envoi : " + JSON.stringify(error));
+        });
+    });
+  </script>
+
+
+  <footer>
     <div class="top-footer">
       <div class="border-bottom">
         <h2>UNE QUESTION ? UNE DEMANDE ?</h2>
       </div>
 
       <div class="white-botton">
-        <button class="button-white"> <a href="https://wa.me/242069235958?text=J'ai%20une%20question%20pour%20vous." class="whatsapp-button"
-            target="_blank">
+        <button class="button-white"> <a href="https://wa.me/242069235958?text=J'ai%20une%20question%20pour%20vous."
+            class="whatsapp-button" target="_blank">
             Contactez nous sur WhatsApp <i class="bi bi-whatsapp"></i>
           </a></button>
       </div>
@@ -224,13 +229,13 @@
       <div class="boite4">
         <h3>NOS RESEAUX SOCIAUX</h3>
 
-         <div class="icons-web">
-        <a href="" style="color: white;"><i class="bi bi-facebook"></i></a>
-        <a href="" style="color: white;"><i class="bi bi-twitter"></i></a>
-        <a href="" style="color: white;"><i class="bi bi-youtube"></i></a>
-        <a href="" style="color: white;"><i class="bi bi-threads"></i></a>
-        <a href="" style="color: white;"><i class="bi bi-linkedin"></i></a>
-      </div>
+        <div class="icons-web">
+          <a href="" style="color: white;"><i class="bi bi-facebook"></i></a>
+          <a href="" style="color: white;"><i class="bi bi-twitter"></i></a>
+          <a href="" style="color: white;"><i class="bi bi-youtube"></i></a>
+          <a href="" style="color: white;"><i class="bi bi-threads"></i></a>
+          <a href="" style="color: white;"><i class="bi bi-linkedin"></i></a>
+        </div>
       </div>
 
     </div>
@@ -241,4 +246,5 @@
   <script src="../chatbot.js"></script>
 
 </body>
+
 </html>
